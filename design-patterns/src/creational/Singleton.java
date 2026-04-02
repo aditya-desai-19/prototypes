@@ -1,5 +1,9 @@
 package creational;
 
+/*
+    When to use Singleton pattern?
+    When you want only one global object of a class
+ */
 class SingletonClass {
     private static SingletonClass instance;
 

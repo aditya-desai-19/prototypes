@@ -1,0 +1,1 @@
+Behavioral patterns control how objects interact and distribute responsibilities. They're about the flow of control and communication between objects.

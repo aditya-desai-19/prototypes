@@ -1,0 +1,1 @@
+Creational pattern deals with object creation by simplifying the process.

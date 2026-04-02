@@ -1,0 +1,14 @@
+General:
+    1. KISS(Keep It Simple Stupid): Start with simple approach don't complicate
+    2. DRY(Don't Repeat Yourself): Minimize duplication
+    3. YAGNI(You Aren't Gonna Need It): Don't build for future requirements.
+    4. Seperation of concern: Different code should handle different responsibility.
+    5. Law of Demeter: A method in class should only talk to immediate methods ie: Avoid deep chaining.
+
+
+Solid Principles:
+    1. Single Responsibility Principle: A class should have only one reason to change.
+    2. Open Closed Principle: Using interface whenever required.
+    3. Liskov Substitution Principle: Wherever parent class is used, if we have child class the program shouldn't break.
+    4. Interface Segregation Principle: If interface becomes very long then try to break it into smaller interface.
+    5. Dependency Inversion Principle: Dependency Inversion states that your code should depend on abstractions, not concrete implementations. Instead of NotificationService creating an EmailSender directly, it should accept a MessageSender interface through its constructor.

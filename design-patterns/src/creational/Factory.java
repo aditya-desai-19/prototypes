@@ -1,5 +1,9 @@
 package creational;
 
+/* When to use Factory pattern?
+    When requirement says support different types then instead of writing new A() all over the place.
+    You create a central class that handles object creation and returns you the object.
+ */
 interface Payment {
     void pay();
 }
@@ -28,6 +32,7 @@ class FactoryClass {
         return null;
     }
 }
+
 public class Factory {
     public static void main(String[] args) {
         Payment p1 = FactoryClass.getPayment("CreditCard");

@@ -1,0 +1,5 @@
+OOPS(Object Oriented Programming System):
+    1. Encapsulation: Keep object data private and instead let object handle how it is changed.
+    2. Abstraction: Hiding implementation and exposing only the method.
+    3. Polymorphism: It replaces long if else chain by accepting interface and let object method implementation handles rest.
+    4. Inheritance: When you find common method implementation across two or more classes then defining a parent class and then defining child class.

@@ -1,0 +1,17 @@
+1. Requirements:
+    Clarify:
+        1. Primary requirements
+        2. Rules and completion
+        3. Error handling
+        4. Scope
+
+2. Define entities and relationship
+
+3. Class design(define class its state(variables) and methods)
+
+4. Implementation(writing pseudocode for important methods in class)
+
+5. Extensibility
+
+
+

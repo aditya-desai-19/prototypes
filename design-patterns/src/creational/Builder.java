@@ -1,5 +1,9 @@
 package creational;
 
+/*
+    When to use Builder pattern?
+    When you have a complex class with too many states and constructor has too many parameters.
+ */
 class User {
     private String name;
     private String address;
