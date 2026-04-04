@@ -1,0 +1,8 @@
+1. Lambda expression
+2. Functional interface
+3. Stream api
+4. Method references
+    // list.forEach(x -> System.out.println(x))
+    // list.forEach(System.out::println)
+5. Optional class to prevent null pointer exception
+6. Date & Time API

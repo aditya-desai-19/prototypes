@@ -1,0 +1,7 @@
+How does hashmap works?
+-> Whenever we define a hashmap a array of buckets of default size(16) is being created.
+-> Whenever we add a key value pair to hashmap a Node is created with hashcode, key, value, next node and based on hashcode the code is inserted in particular bucket.
+
+How hashmap handles colision?
+-> When two nodes have same index then in that case next node is being used to point to current node forming a linked list(Prior to Java 8).
+-> In Java 8 linked list in broken down into binary search tree.
