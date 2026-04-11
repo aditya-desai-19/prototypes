@@ -1,0 +1,44 @@
+What is thread?
+-> Smallest unit of process
+
+What is multithreading?
+-> It is concurrent execution of two or more threads. It allows to execute multiple tasks simultaneously, leading to better performance and resource utilization.
+
+Life cycle of thread
+-> 1. New(or Born)
+        Here thread is just and object that is initialized and not started and there is no resource allocated.
+
+        Thread t = new Thread()
+
+    2. Runnable
+        A thread moves to runnable state when start() method is called. In this state the thread is ready to run and is waiting for CPU time to execute its run()
+        method. It can be running or waiting to run
+
+    3. Blocked
+        A thread enters blocked state when it tries to access synchronized block.
+
+    4. Waiting
+        A thread is in the waiting state when it is waiting for another thread to perform particular action. A thread enters this state by calling methods like
+        wait(), join() or park()
+
+    5. Timed waiting
+        A thread is in Timed Waiting state when it is waiting for another thread to perform an action for up to a specified waiting time. A thread enters
+        this state by calling methods like sleep(long millis), wait(long timeout), join(long millis) or parkNanos(long nanos).
+
+    6. Terminated(or Dead)
+        A thread enters Terminated state when it has finished executing its run method or when it is interrupted.
+
+Thread.sleep():
+    It is powerful tool in Java for controlling thread executiion timing.
+
+Thread.join()
+    It tells other thread to pause until current thread is finished.
+
+synchronized keyword:
+    This keyword ensures that only one thread can execute piece of code at a time
+
+volatile keyword:
+    It is used for variable. When a variable is marked as volatile the value is not cached and every read returns latest write.
+
+Executor framework:
+    Framework used to manage threads in java
