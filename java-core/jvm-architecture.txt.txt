@@ -1,0 +1,20 @@
+JVM Architecture:
+
+1. Java code is converted to bytecode (ie: Hello.java -> Hello.class) using java compiler.
+
+2. Bytecode is brought to JVM using Class Loader Subsystem. The Class Loader Subsystem has three parts:
+	1. Loading: It finds .class file and brings it to JVM.
+	2. Linking: It verifies the code is safe to run, prepares the memory and resolves references to other classes.
+	3. Initialization: It assign final values to your static variables.
+
+3. The Memory Stage: Here metadata is stored of bytecode. It has five parts:
+	1. Method area: Stores class level data, names of methods and static variables.
+	2. Heap area: Stores all objects
+	3. Stack area: Stores all method calls and temporary variable for each thread.
+	4. PC Registers: A tiny bookmark that stores the address of the current instructions being executed.
+	5. Native Method Stack: Handles instruction for non java code(like C or C++ libraries).
+
+4. The Execution Engine: The Heart of JVM
+	1. Interpreter: Reads bytecode line by line.
+	2. JIT compiler: It sees piece of code that is run over and over, it compiles that code directly to machine code so it runs at lightning speed.
+	3. Garbage collector: It monitors Heap memory, find objects that program is not using  anymore and deletes them to free up memory.
