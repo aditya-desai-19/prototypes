@@ -1,12 +1,18 @@
+What is process?
+-> Independent running instance of a program.
+-> Process has its seperate memory, variables, resources, file handles, security context.
+Ex: When you start your computer and open app like chrome, camera, video player etc these are 3 seperate individual process.
+
 What is thread?
 -> Smallest unit of process
+-> Thread share same memory and resources.
 
 What is multithreading?
 -> It is concurrent execution of two or more threads. It allows to execute multiple tasks simultaneously, leading to better performance and resource utilization.
 
 Life cycle of thread
 -> 1. New(or Born)
-        Here thread is just and object that is initialized and not started and there is no resource allocated.
+        Here thread is just created and object that is initialized and not started and there is no resource allocated.
 
         Thread t = new Thread()
 
@@ -40,5 +46,7 @@ synchronized keyword:
 volatile keyword:
     It is used for variable. When a variable is marked as volatile the value is not cached and every read returns latest write.
 
-Executor framework:
-    Framework used to manage threads in java
+wait() and notify(): wait() and notify() are Object class methods used for inter thread communication, where wait() releases the monitor lock
+and suspends thread until notified, and notify() wakes one waiting thread on the same monitor object.
+
+notifyAll(): wakes all threads on the same monitor object.
