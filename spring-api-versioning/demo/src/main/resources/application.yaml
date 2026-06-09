@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: versioning-demo
+
+  mvc:
+    apiversion:
+        use:
+#          used for path based versioning
+#          path-segment: 2
+
+          header: X-API-Version
+        supported:
+          - 1
+          - 2
+        default: 1
